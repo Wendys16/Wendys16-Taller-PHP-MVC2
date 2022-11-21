@@ -1,0 +1,54 @@
+{
+	"info": {
+		"_postman_id": "919a1a46-a418-41e7-a019-a10984cf0474",
+		"name": "Reportes",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15571214"
+	},
+	"item": [
+		{
+			"name": "Reporte",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "fecha_ini",
+							"value": "20/12/2022",
+							"type": "text"
+						},
+						{
+							"key": "fecha_fin",
+							"value": "20/12/2023",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/tallerPhp/index.php?controller=reporte&action=reporte",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"tallerPhp",
+						"index.php"
+					],
+					"query": [
+						{
+							"key": "controller",
+							"value": "reporte"
+						},
+						{
+							"key": "action",
+							"value": "reporte"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

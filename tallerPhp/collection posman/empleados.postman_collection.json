@@ -1,0 +1,269 @@
+{
+	"info": {
+		"_postman_id": "4c8350bd-4430-4013-81b2-cfa3eb37afcb",
+		"name": "empleados",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15571214"
+	},
+	"item": [
+		{
+			"name": "Insertar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "nombre",
+							"value": "ttr",
+							"type": "text"
+						},
+						{
+							"key": "apellido",
+							"value": "rtrttr",
+							"type": "text"
+						},
+						{
+							"key": "fecha_hora_entrega",
+							"value": "2022-05-05 10:05:45",
+							"type": "text"
+						},
+						{
+							"key": "fecha_nacimiento",
+							"value": "1997-03-30",
+							"type": "text"
+						},
+						{
+							"key": "telefono",
+							"value": "32154789988554",
+							"type": "text"
+						},
+						{
+							"key": "estatura",
+							"value": "1.50",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "WMARTINEZ@GMAIL.COM",
+							"type": "text"
+						},
+						{
+							"key": "fecha",
+							"value": "2022/01/05",
+							"type": "text"
+						},
+						{
+							"key": "idAuto",
+							"value": "35",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/tallerPhp/index.php?controller=empleado&action=store",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"tallerPhp",
+						"index.php"
+					],
+					"query": [
+						{
+							"key": "controller",
+							"value": "empleado"
+						},
+						{
+							"key": "action",
+							"value": "store"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Editar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "idEmpleado",
+							"value": "56601",
+							"type": "text"
+						},
+						{
+							"key": "nombre",
+							"value": "MATEOsdddd",
+							"type": "text"
+						},
+						{
+							"key": "apellido",
+							"value": "AVILAPALOMO",
+							"type": "text"
+						},
+						{
+							"key": "fecha_hora_entrega",
+							"value": "2022-05-05 10:05:45",
+							"type": "text"
+						},
+						{
+							"key": "fecha_nacimiento",
+							"value": "1997-03-30",
+							"type": "text"
+						},
+						{
+							"key": "telefono",
+							"value": "32154845",
+							"type": "text"
+						},
+						{
+							"key": "estatura",
+							"value": "1.70",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "M.AVILA",
+							"type": "text"
+						},
+						{
+							"key": "idAuto",
+							"value": "35",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/tallerPhp/index.php?controller=empleado&action=update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"tallerPhp",
+						"index.php"
+					],
+					"query": [
+						{
+							"key": "controller",
+							"value": "empleado"
+						},
+						{
+							"key": "action",
+							"value": "update"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "idEmpleado",
+							"value": "56600",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/tallerPhp/index.php?controller=empleado&action=delete",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"tallerPhp",
+						"index.php"
+					],
+					"query": [
+						{
+							"key": "controller",
+							"value": "empleado"
+						},
+						{
+							"key": "action",
+							"value": "delete"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar Uno",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/tallerPhp/index.php?controller=empleado&action=readOne&idEmpleado=56604",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"tallerPhp",
+						"index.php"
+					],
+					"query": [
+						{
+							"key": "controller",
+							"value": "empleado"
+						},
+						{
+							"key": "action",
+							"value": "readOne"
+						},
+						{
+							"key": "idEmpleado",
+							"value": "56604"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar Todo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/tallerPhp/index.php?controller=empleado&action=readAll",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"tallerPhp",
+						"index.php"
+					],
+					"query": [
+						{
+							"key": "controller",
+							"value": "empleado"
+						},
+						{
+							"key": "action",
+							"value": "readAll"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

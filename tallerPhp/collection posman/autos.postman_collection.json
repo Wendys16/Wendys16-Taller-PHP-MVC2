@@ -1,0 +1,226 @@
+{
+	"info": {
+		"_postman_id": "b14e9d6b-a7fb-436d-a29e-64bce5d76a7e",
+		"name": "autos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15571214"
+	},
+	"item": [
+		{
+			"name": "Insertar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "placa_auto",
+							"value": "555k4s",
+							"type": "text"
+						},
+						{
+							"key": "anho_modelo",
+							"value": "wwww",
+							"type": "text"
+						},
+						{
+							"key": "modelo",
+							"value": "modelo 433",
+							"type": "text"
+						},
+						{
+							"key": "precio",
+							"value": "555",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/tallerPhp/index.php?controller=auto&action=store",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"tallerPhp",
+						"index.php"
+					],
+					"query": [
+						{
+							"key": "controller",
+							"value": "auto"
+						},
+						{
+							"key": "action",
+							"value": "store"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Editar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "idAuto",
+							"value": "35",
+							"type": "text"
+						},
+						{
+							"key": "placa_auto",
+							"value": "mw",
+							"type": "text"
+						},
+						{
+							"key": "anho_modelo",
+							"value": "202533",
+							"type": "text"
+						},
+						{
+							"key": "modelo",
+							"value": "434334455454",
+							"type": "text"
+						},
+						{
+							"key": "precio",
+							"value": "78",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/tallerPhp/index.php?controller=auto&action=update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"tallerPhp",
+						"index.php"
+					],
+					"query": [
+						{
+							"key": "controller",
+							"value": "auto"
+						},
+						{
+							"key": "action",
+							"value": "update"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "idAuto",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/tallerPhp//index.php?controller=auto&action=delete",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"tallerPhp",
+						"",
+						"index.php"
+					],
+					"query": [
+						{
+							"key": "controller",
+							"value": "auto"
+						},
+						{
+							"key": "action",
+							"value": "delete"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar Uno",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/tallerPhp//index.php?controller=auto&action=readOne&idAuto=35",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"tallerPhp",
+						"",
+						"index.php"
+					],
+					"query": [
+						{
+							"key": "controller",
+							"value": "auto"
+						},
+						{
+							"key": "action",
+							"value": "readOne"
+						},
+						{
+							"key": "idAuto",
+							"value": "35"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar Todo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/tallerPhp/index.php?controller=auto&action=readAll",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"tallerPhp",
+						"index.php"
+					],
+					"query": [
+						{
+							"key": "controller",
+							"value": "auto"
+						},
+						{
+							"key": "action",
+							"value": "readAll"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
